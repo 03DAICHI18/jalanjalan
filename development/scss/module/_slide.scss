@@ -1,0 +1,29 @@
+.bl_slide_container {
+	border-radius: 14px;
+	border-radius: 14px;
+	height: 600px;
+	margin: 0 auto;
+	max-width: 1080px;
+	overflow: hidden;
+	position: relative;
+}
+
+@include maxmq(tab) {
+	.bl_slide_container {
+		height: 400px;
+	}
+}
+
+.el_slide_list {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.el_slide_img {
+	font-family: "object-fit: cover;";  /*IE対策*/
+	height: 100%;
+	object-fit: cover;
+}

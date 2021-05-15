@@ -1,36 +1,10 @@
 @charset "UTF-8";
 /* base */
 /************************************************/
-@media screen and (min-width: 769px) and (max-width: 1440px) {
-  html {
-    font-size: .625vw;
-  }
-}
-
 body {
-  -webkit-animation: fadein 1s forwards;
-          animation: fadein 1s forwards;
-  color: #606569;
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+  color: #909090;
+  font-family: "Futura", "Trebuchet MS", sans-serif;
   overflow-x: hidden;
-}
-
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
 }
 
 img {
@@ -41,10 +15,38 @@ img {
 
 /* layoutModule */
 /************************************************/
-/* elementModule */
-/************************************************/
-/* blockModule */
-/************************************************/
+.bl_slide_container {
+  border-radius: 14px;
+  border-radius: 14px;
+  height: 600px;
+  margin: 0 auto;
+  max-width: 1080px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .bl_slide_container {
+    height: 400px;
+  }
+}
+
+.el_slide_list {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.el_slide_img {
+  font-family: "object-fit: cover;";
+  /*IE対策*/
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* helperスタイル */
 /************************************************/
 .hp_mt0 {
@@ -179,13 +181,5 @@ img {
 /************************************************/
 /* xページ独自のスタイル */
 /************************************************/
-/* x2ページ独自のスタイル */
-/************************************************/
-/* x3ページ独自のスタイル */
-/************************************************/
-/* x4ページ独自のスタイル */
-/************************************************/
 /* js対応スタイル */
-/************************************************/
-/* originalスタイル */
 /************************************************/
