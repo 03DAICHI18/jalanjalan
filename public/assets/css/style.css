@@ -13,7 +13,14 @@ img {
   width: 100%;
 }
 
-/* layoutModule */
+/* layout */
+/************************************************/
+.ly_contentsWrapper {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+/* Module */
 /************************************************/
 .bl_slide_container {
   border-radius: 14px;
@@ -57,6 +64,25 @@ img {
     -o-object-position: 15% 10%;
        object-position: 15% 10%;
   }
+}
+
+.el_section_title {
+  color: #090909;
+  font-size: 2.5rem;
+  padding-left: 2.5rem;
+}
+
+.el_section_subTitle {
+  color: #090909;
+  font-size: 1.875rem;
+  margin-top: 109px;
+}
+
+.el_horizon {
+  background-image: url(../../../public/assets/img/horizon.svg);
+  display: block;
+  height: 5px;
+  margin-top: 20px;
 }
 
 /* helperスタイル */
@@ -189,9 +215,45 @@ img {
   margin-bottom: 150px !important;
 }
 
-/* トップページ独自のスタイル */
+/* ページ独自のスタイル */
 /************************************************/
-/* xページ独自のスタイル */
-/************************************************/
+.un_concept_lead {
+  text-align: center;
+}
+
+.un_concept_text {
+  font-size: 1.25rem;
+  margin-top: 2em;
+}
+
+.un_concept_stance {
+  margin: 0 auto;
+  max-width: 916px;
+  padding: 0 20px;
+}
+
+.un_concept_stanceBlock {
+  display: flex;
+  margin-top: 75px;
+}
+
+.un_concept_stanceImg {
+  flex-shrink: 0;
+  height: 200px;
+  width: 200px;
+}
+
+.un_concept_stanceImg img {
+  height: 100%;
+}
+
+.un_concept_stanceText {
+  margin-left: 62px;
+}
+
+.un_concept_stanceAbout {
+  margin-top: 32px;
+}
+
 /* js対応スタイル */
 /************************************************/

@@ -19,12 +19,13 @@
 
 // module：共通パーツ
 @import "module/slide";
+@import "module/section_title";
+@import "module/horizon";
 
 // helper：補助スタイル
 @import "helper/helper";
 
 // unipue：ある1ページでしか使用されないスタイル
-@import "unipue/top";
 @import "unipue/concept";
 
 // program：js等のプログラムに対応するスタイル  
