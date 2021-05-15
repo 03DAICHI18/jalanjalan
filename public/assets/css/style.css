@@ -4,6 +4,9 @@
 body {
   color: #909090;
   font-family: "Futura", "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6875;
+  letter-spacing: 0.1em;
   overflow-x: hidden;
 }
 
@@ -17,7 +20,7 @@ img {
 /************************************************/
 .ly_contentsWrapper {
   margin: 0 auto;
-  max-width: 1220px;
+  max-width: 997px;
   padding: 0 20px;
 }
 
@@ -70,20 +73,23 @@ img {
 .el_section_title {
   color: #090909;
   font-size: 2.5rem;
-  padding-left: 2.5rem;
+  line-height: 1.325;
+  letter-spacing: 0.1em;
+  padding-left: 1em;
 }
 
 @media screen and (max-width: 780px) {
   .el_section_title {
     font-size: 2rem;
-    padding-left: 1.25rem;
   }
 }
 
 .el_section_subTitle {
   color: #090909;
   font-size: 1.875rem;
-  margin-top: 109px;
+  line-height: 1.7;
+  letter-spacing: 0.1em;
+  margin-top: 100px;
 }
 
 @media screen and (max-width: 780px) {
@@ -98,6 +104,10 @@ img {
   display: block;
   height: 5px;
   margin-top: 20px;
+}
+
+.el_horizon_concept {
+  margin-top: 10px;
 }
 
 /* helperスタイル */
@@ -244,13 +254,15 @@ img {
 
 .un_concept_text {
   font-size: 1.25rem;
-  margin-top: 2em;
+  line-height: 1.7;
+  letter-spacing: 0.1em;
+  margin-top: 1.4em;
 }
 
 .un_concept_stance {
   margin: 0 auto;
-  max-width: 916px;
-  padding: 0 20px;
+  margin-top: -12px;
+  max-width: 878px;
 }
 
 .un_concept_stanceBlock {
@@ -261,7 +273,7 @@ img {
 @media screen and (max-width: 780px) {
   .un_concept_stanceBlock {
     display: block;
-    margin-top: 60px;
+    margin-top: 80px;
   }
 }
 
@@ -272,6 +284,14 @@ img {
 }
 
 @media screen and (max-width: 780px) {
+  .un_concept_stanceImg {
+    height: 400px;
+    margin: 0 auto;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .un_concept_stanceImg {
     height: 250px;
     margin: 0 auto;
@@ -290,12 +310,16 @@ img {
 @media screen and (max-width: 780px) {
   .un_concept_stanceText {
     margin-left: 0;
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 
 .un_concept_stanceAbout {
-  margin-top: 32px;
+  margin-top: 1.5em;
+}
+
+.un_concept_stanceSubHead {
+  margin-top: .6em;
 }
 
 /* js対応スタイル */

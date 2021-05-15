@@ -4,6 +4,7 @@
 body {
 	color: $base-color;
 	font-family: $fontFamily;
+	@include f_around(16 , 27 , false , 100);
 	overflow-x: hidden;
 }
 

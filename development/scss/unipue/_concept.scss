@@ -8,21 +8,21 @@
 }
 
 .un_concept_text {
-	font-size: rem(20);
-	margin-top: 2em;
+	@include f_around(20 , 34 , false , 100);
+	margin-top: 1.4em;
 }
 
 .un_concept_stance {
 	margin: 0 auto;
-	max-width: 916px;
-	padding: 0 20px;
+	margin-top: -12px;
+	max-width: 878px;
 }
 
 .un_concept_stanceBlock {
 	display: flex;
 	@include maxmq(tab) {
 		display: block;
-		margin-top: 60px;
+		margin-top: 80px;
 	}
 	margin-top: 75px;
 }
@@ -31,6 +31,11 @@
 	flex-shrink: 0;
 	height: 200px;
 	@include maxmq(tab) {
+		height: 400px;
+		margin: 0 auto;
+		width: 400px;
+	}
+	@include maxmq(sp) {
 		height: 250px;
 		margin: 0 auto;
 		width: 250px;
@@ -44,11 +49,15 @@
 .un_concept_stanceText {
 	@include maxmq(tab) {
 		margin-left: 0;
-		margin-top: 30px;
+		margin-top: 20px;
 	}
 	margin-left: 62px;
 }
 
 .un_concept_stanceAbout {
-	margin-top: 32px;
+	margin-top: 1.5em;
+}
+
+.un_concept_stanceSubHead {
+	margin-top: .6em;
 }
