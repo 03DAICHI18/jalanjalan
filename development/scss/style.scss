@@ -1,0 +1,33 @@
+//  サイト共通設定
+////////////////////////////////////////////////////////////////
+// setting：基本設定（変数などにまとめられるスタイル基本情報）
+@import "setting/color";
+@import "setting/fontfamily";
+@import "setting/size";
+
+// mixin：共通スタイル（別Block間で使いまわせるスタイルの部品化）
+@import "mixin/mixin";
+@import "function/function";
+
+//  以下、PRECSSに則ったファイル構成
+////////////////////////////////////////////////////////////////
+// base：ベース設定
+@import "base/base";
+
+// layout：サイトレイアウトのスタイル
+@import "layout/layout";
+
+// module：共通パーツ
+@import "module/elementmodule/elementmodule";
+
+// helper：補助スタイル
+@import "helper/helper";
+
+// unipue：ある1ページでしか使用されないスタイル
+@import "unipue/top";
+@import "unipue/concept";
+
+// program：js等のプログラムに対応するスタイル  
+// （jsで要素を取得させるクラス  js_）
+// （要素の状態を管理するクラス  is_）
+@import "program/program";

@@ -1,0 +1,46 @@
+// レスポンシブwidth設定
+// スマホ基準(〜以上)
+@mixin minmq($breakpoint: sp) {
+	@media screen and (min-width: #{map-get($mq-breakpoints, $breakpoint)}) {
+		@content;
+	}
+}
+
+// PC基準(〜未満)
+@mixin maxmq($breakpoint: sp) {
+	@media screen and (max-width: #{map-get($mq-breakpoints, $breakpoint)}) {
+		@content;
+	}
+}
+
+
+// font-size,line-height,font-weight,letter-spacing
+@mixin f_around($pixels, $height: false, $weight: false , $spacing: false) {
+	font-size: #{rem($pixels)};
+	@if $weight {
+		font-weight: $weight;
+	}
+
+	@if $height {
+		line-height: $height / $pixels;
+	}
+
+	@if $spacing {
+		letter-spacing: ($spacing / 1000) * 1em;
+	}
+}
+// 呼び出し時
+// include f_around(フォントサイズ, 行高 , 太さ, トラッキング)
+// ***************************************************
+
+// line-height
+@mixin l_height($pixels , $height) {
+	font-size: #{rem($pixels)};
+	line-height: $height / $pixels;
+}
+
+// letter-spacing
+@mixin l_spacing($spacing) {
+	letter-spacing: ($spacing / 1000 ) + em;
+}
+// ***************************************************

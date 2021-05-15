@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* base */
+/************************************************/
+body {
+	color: $base-color;
+	font-family: $fontFamily;
+	overflow-x: hidden;
+}
+
+img {
+	height: auto;
+	vertical-align: bottom;
+	width: 100%;
+}
