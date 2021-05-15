@@ -278,16 +278,18 @@ img {
 }
 
 .un_concept_stanceImg {
+  border-radius: 15px;
   flex-shrink: 0;
   height: 200px;
+  overflow: hidden;
   width: 200px;
 }
 
 @media screen and (max-width: 780px) {
   .un_concept_stanceImg {
-    height: 400px;
+    height: 500px;
     margin: 0 auto;
-    width: 400px;
+    width: 80%;
   }
 }
 
@@ -300,7 +302,11 @@ img {
 }
 
 .un_concept_stanceImg img {
+  font-family: "object-fit: cover;";
+  /*IE対策*/
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .un_concept_stanceText {

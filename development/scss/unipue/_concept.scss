@@ -28,21 +28,25 @@
 }
 
 .un_concept_stanceImg {
+	border-radius: 15px;
 	flex-shrink: 0;
 	height: 200px;
 	@include maxmq(tab) {
-		height: 400px;
+		height: 500px;
 		margin: 0 auto;
-		width: 400px;
+		width: 80%;
 	}
 	@include maxmq(sp) {
 		height: 250px;
 		margin: 0 auto;
 		width: 250px;
 	}
+	overflow: hidden;
 	width: 200px;
 	img {
+		font-family: "object-fit: cover;";  /*IE対策*/
 		height: 100%;
+		object-fit: cover;
 	}
 }
 
