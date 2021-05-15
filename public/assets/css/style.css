@@ -17,7 +17,8 @@ img {
 /************************************************/
 .ly_contentsWrapper {
   margin: 0 auto;
-  max-width: 1080px;
+  max-width: 1220px;
+  padding: 0 20px;
 }
 
 /* Module */
@@ -72,10 +73,24 @@ img {
   padding-left: 2.5rem;
 }
 
+@media screen and (max-width: 780px) {
+  .el_section_title {
+    font-size: 2rem;
+    padding-left: 1.25rem;
+  }
+}
+
 .el_section_subTitle {
   color: #090909;
   font-size: 1.875rem;
   margin-top: 109px;
+}
+
+@media screen and (max-width: 780px) {
+  .el_section_subTitle {
+    font-size: 1.5rem;
+    margin-top: 60px;
+  }
 }
 
 .el_horizon {
@@ -221,6 +236,12 @@ img {
   text-align: center;
 }
 
+@media screen and (max-width: 780px) {
+  .un_concept_lead {
+    text-align: left;
+  }
+}
+
 .un_concept_text {
   font-size: 1.25rem;
   margin-top: 2em;
@@ -237,10 +258,25 @@ img {
   margin-top: 75px;
 }
 
+@media screen and (max-width: 780px) {
+  .un_concept_stanceBlock {
+    display: block;
+    margin-top: 60px;
+  }
+}
+
 .un_concept_stanceImg {
   flex-shrink: 0;
   height: 200px;
   width: 200px;
+}
+
+@media screen and (max-width: 780px) {
+  .un_concept_stanceImg {
+    height: 250px;
+    margin: 0 auto;
+    width: 250px;
+  }
 }
 
 .un_concept_stanceImg img {
@@ -249,6 +285,13 @@ img {
 
 .un_concept_stanceText {
   margin-left: 62px;
+}
+
+@media screen and (max-width: 780px) {
+  .un_concept_stanceText {
+    margin-left: 0;
+    margin-top: 30px;
+  }
 }
 
 .un_concept_stanceAbout {

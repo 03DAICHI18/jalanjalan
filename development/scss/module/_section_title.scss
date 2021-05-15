@@ -1,11 +1,19 @@
 .el_section_title {
 	color: $accent-color;
 	font-size: rem(40);
+	@include maxmq(tab) {
+		font-size: rem(32);
+		padding-left: rem(20);
+	}
 	padding-left: rem(40);
 }
 
 .el_section_subTitle {
 	color: $accent-color;
 	font-size: rem(30);
+	@include maxmq(tab) {
+		font-size: rem(24);
+		margin-top: 60px;
+	}
 	margin-top: 109px;
 }
