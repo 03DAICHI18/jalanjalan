@@ -17,7 +17,6 @@ img {
 /************************************************/
 .bl_slide_container {
   border-radius: 14px;
-  border-radius: 14px;
   height: 600px;
   margin: 0 auto;
   max-width: 1080px;
@@ -25,7 +24,13 @@ img {
   position: relative;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1080px) {
+  .bl_slide_container {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 780px) {
   .bl_slide_container {
     height: 400px;
   }
@@ -45,6 +50,13 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 780px) {
+  .el_slide_img {
+    -o-object-position: 15% 10%;
+       object-position: 15% 10%;
+  }
 }
 
 /* helperスタイル */

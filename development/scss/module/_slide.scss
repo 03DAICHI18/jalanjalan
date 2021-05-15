@@ -1,6 +1,5 @@
 .bl_slide_container {
 	border-radius: 14px;
-	border-radius: 14px;
 	height: 600px;
 	margin: 0 auto;
 	max-width: 1080px;
@@ -8,6 +7,11 @@
 	position: relative;
 }
 
+@include maxmq(pc) {
+	.bl_slide_container {
+		margin: 0 20px;
+	}
+}
 @include maxmq(tab) {
 	.bl_slide_container {
 		height: 400px;
@@ -25,5 +29,8 @@
 .el_slide_img {
 	font-family: "object-fit: cover;";  /*IE対策*/
 	height: 100%;
+	@include maxmq(tab) {
+		object-position: 15% 10%;
+	}
 	object-fit: cover;
 }
