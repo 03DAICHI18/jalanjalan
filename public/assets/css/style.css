@@ -204,34 +204,36 @@ img {
           transform: translate(-3px, 3px);
 }
 
-.el_btn_line.is_open::before {
-  background-color: #fff;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+@media screen and (max-width: 780px) {
+  .el_btn_line.is_open::before {
+    background-color: #fff;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .el_btn_line.is_open::after {
+    color: #fff;
+    content: "close";
+    -webkit-transform: translate(-3px, 3px);
+            transform: translate(-3px, 3px);
+  }
+  .bl_nav.is_open {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    z-index: 100;
+  }
 }
 
-.el_btn_line.is_open::after {
-  color: #fff;
-  content: "close";
-  -webkit-transform: translate(-3px, 3px);
-          transform: translate(-3px, 3px);
-}
-
-.bl_nav.is_open {
-  -webkit-transform: translateY(-40px);
-          transform: translateY(-40px);
-  z-index: 100;
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) and (max-width: 480px) {
   .bl_nav.is_open {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
 }
 
-.el_nav_item a.is_open {
-  opacity: 1;
+@media screen and (max-width: 780px) {
+  .el_nav_item a.is_open {
+    opacity: 1;
+  }
 }
 
 /* Module */

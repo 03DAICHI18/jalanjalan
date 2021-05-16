@@ -11,7 +11,6 @@
 		-webkit-animation-iteration-count: 1;
 		animation-iteration-count: 1;
 		background-attachment: initial;
-		scroll-behavior: auto;
 		transition-delay: 0s;
 		transition-duration: 0s;
 	}

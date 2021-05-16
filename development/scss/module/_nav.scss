@@ -140,28 +140,30 @@
 }
 
 // メニューオープン時
-.el_btn_line.is_open::before {
-	background-color: #fff;
-	transform: translate(0 , 0);
-}
-
-.el_btn_line.is_open::after {
-	color: #fff;
-	content: "close";
-	transform: translate(-3px , 3px);
-}
-
-.bl_nav.is_open {
-	@include maxmq(xs) {
-		transform: translateY(0);
+@include maxmq(md) {
+	.el_btn_line.is_open::before {
+		background-color: #fff;
+		transform: translate(0 , 0);
 	}
 
-	transform: translateY(-40px);
-	z-index: 100;
-}
+	.el_btn_line.is_open::after {
+		color: #fff;
+		content: "close";
+		transform: translate(-3px , 3px);
+	}
 
-.el_nav_item {
-	a.is_open {
-		opacity: 1;
+	.bl_nav.is_open {
+		@include maxmq(xs) {
+			transform: translateY(0);
+		}
+
+		transform: translateY(-40px);
+		z-index: 100;
+	}
+
+	.el_nav_item {
+		a.is_open {
+			opacity: 1;
+		}
 	}
 }
