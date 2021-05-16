@@ -2,12 +2,13 @@
 /* base */
 /************************************************/
 body {
-	color: $base-color;
-	font-family: $fontFamily;
 	@include f_around(16 , 27 , false , 100);
-	@include maxmq(sp) {
+	@include maxmq(sm) {
 		font-size: rem(14);
 	}
+
+	color: $base-color;
+	font-family: $fontFamily;
 	overflow-x: hidden;
 }
 
@@ -15,9 +16,4 @@ img {
 	height: auto;
 	vertical-align: bottom;
 	width: 100%;
-}
-
-h1 , p , dl , dt , dd {
-	margin: 0;
-	padding: 0;
 }

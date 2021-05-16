@@ -1,17 +1,19 @@
 /* ページ独自のスタイル */
 /************************************************/
 .un_concept_lead {
-	@include maxmq(sp) {
+	@include maxmq(sm) {
 		text-align: left;
 	}
+
 	text-align: center;
 }
 
 .un_concept_text {
 	@include f_around(20 , 34 , false , 100);
-	@include maxmq(sp) {
+	@include maxmq(sm) {
 		font-size: rem(16);
 	}
+
 	margin-top: 1.4em;
 }
 
@@ -22,28 +24,30 @@
 }
 
 .un_concept_stanceBlock {
-	display: flex;
-	@include maxmq(sp) {
+	@include maxmq(sm) {
 		flex-direction: column;
 		margin-top: 40px;
 	}
+
+	display: flex;
 	margin-top: 75px;
 }
 
 .un_concept_stanceImg {
-	border-radius: 14px;
-	flex-shrink: 0;
-	height: 200px;
-	@include maxmq(sp) {
+	@include maxmq(sm) {
 		height: 300px;
 		margin: 20px auto 0;
 		order: 2;
 		width: 60%;
 	}
-	@include maxmq(sp) {
+	@include maxmq(sm) {
 		height: 250px;
 		width: 250px;
 	}
+
+	border-radius: 14px;
+	flex-shrink: 0;
+	height: 200px;
 	overflow: hidden;
 	width: 200px;
 	img {
@@ -54,9 +58,10 @@
 }
 
 .un_concept_stanceText {
-	@include maxmq(sp) {
+	@include maxmq(sm) {
 		margin-left: 0;
 	}
+
 	margin-left: 62px;
 }
 
@@ -65,8 +70,9 @@
 }
 
 .un_concept_stanceSubHead {
-	@include maxmq(sp) {
+	@include maxmq(sm) {
 		margin-top: 0;
 	}
+
 	margin-top: .6em;
 }

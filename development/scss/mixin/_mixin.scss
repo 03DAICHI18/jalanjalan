@@ -1,13 +1,13 @@
 // レスポンシブwidth設定
 // スマホ基準(〜以上)
-@mixin minmq($breakpoint: sp) {
+@mixin minmq($breakpoint: sm) {
 	@media screen and (min-width: #{map-get($mq-breakpoints, $breakpoint)}) {
 		@content;
 	}
 }
 
 // PC基準(〜未満)
-@mixin maxmq($breakpoint: sp) {
+@mixin maxmq($breakpoint: sm) {
 	@media screen and (max-width: #{map-get($mq-breakpoints, $breakpoint)}) {
 		@content;
 	}

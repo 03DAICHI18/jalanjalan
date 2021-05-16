@@ -1,7 +1,0 @@
-.bl_header {
-	display: flex;
-	@include maxmq(tab) {
-		justify-content: space-between;
-	}
-	margin: 100px 0 85px;
-}

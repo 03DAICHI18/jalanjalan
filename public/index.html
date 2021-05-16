@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 外部ファイル読み込み -->
-  <link rel="stylesheet" href="assets/css/destyle.css">
+  <link rel="stylesheet" href="assets/css/reseter.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
@@ -14,8 +14,8 @@
 </head>
 <body>
   <div class="ly_top_container">
-    <div class="bl_header">
-      <div class="bl_headerBlock">
+    <div class="un_top_header">
+      <div>
         <h1 class="un_top_logo"><img src="./assets/img/logo.svg" alt="jalanjalan"></h1>
         <div class="un_top_lead">
           <p>福岡市中央区今川にある美容院です。</p>
@@ -23,7 +23,7 @@
           <p>お客様のお越しを、心よりお待ちしております。</p>
         </div>
       </div>
-      <dl class="bl_headerBlock un_definition_wrap">
+      <dl class="un_definition_wrap">
         <div class="un_definition_block">
           <dt class="un_definition_term hp_texttransform">phone</dt>
           <dd class="un_definition_description">092-752-1016</dd>
@@ -42,25 +42,26 @@
         </div>
       </dl>
     </div>
-
     <header>
+      <button type="button" class="el_btn js_btn">
+        <span class="el_btn_line"></span>
+      </button>
       <nav>
-        <ul>
-          <li class="el_header_item"><a href="">Concept</a></li>
-          <li class="el_header_item"><a href="">Stylist</a></li>
-          <li class="el_header_item"><a href="">Gallary</a></li>
-          <li class="el_header_item"><a href="">Price</a></li>
-          <li class="el_header_item"><a href="">Access</a></li>
-          <li class="el_header_item"><a href="">Instagram</a></li>
+        <ul class="bl_nav js_nav">
+          <li class="el_nav_item"><a href="">Concept</a></li>
+          <li class="el_nav_item"><a href="">Stylist</a></li>
+          <li class="el_nav_item"><a href="">Gallary</a></li>
+          <li class="el_nav_item"><a href="">Price</a></li>
+          <li class="el_nav_item"><a href="">Access</a></li>
+          <li class="el_nav_item"><a href="">Instagram</a></li>
         </ul>
       </nav>
     </header>
-
     <main>
       <div class="bl_slide_container">
-        <div class="el_slide_list"><img class="el_slide_img" src="./assets/img/top01.jpg" alt=""></div>
-        <div class="el_slide_list"><img class="el_slide_img" src="./assets/img/top02.jpg" alt=""></div>
-        <div class="el_slide_list"><img class="el_slide_img" src="./assets/img/top03.jpg" alt=""></div>
+        <div class="el_slide_list js_slide_list"><img class="el_slide_img" src="./assets/img/top01.jpg" alt=""></div>
+        <div class="el_slide_list js_slide_list"><img class="el_slide_img" src="./assets/img/top02.jpg" alt=""></div>
+        <div class="el_slide_list js_slide_list"><img class="el_slide_img" src="./assets/img/top03.jpg" alt=""></div>
       </div>
     </main>
   </div>

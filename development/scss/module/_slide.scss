@@ -5,9 +5,10 @@
 	height: 600px;
 	overflow: hidden;
 	position: relative;
+	z-index: -1;
 }
 
-@include maxmq(sp) {
+@include maxmq(sm) {
 	.bl_slide_container {
 		height: 400px;
 	}
@@ -22,10 +23,11 @@
 }
 
 .el_slide_img {
-	font-family: "object-fit: cover;";  /*IE対策*/
-	height: 100%;
-	@include maxmq(sp) {
+	@include maxmq(sm) {
 		object-position: 15% 10%;
 	}
+
+	font-family: "object-fit: cover;";  /*IE対策*/
+	height: 100%;
 	object-fit: cover;
 }

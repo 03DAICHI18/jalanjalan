@@ -1,4 +1,26 @@
+.un_top_header {
+	@include maxmq(lg) {
+		justify-content: space-between;
+	}
+	@include maxmq(md) {
+		display: block;
+		margin-bottom: -250px;
+		text-align: center;
+	}
+	@include maxmq(xs) {
+		margin-bottom: -300px;
+	}
+
+	display: flex;
+	margin-top: 100px;
+}
+
 .un_top_logo {
+	@include maxmq(md) {
+		margin: 0 auto;
+		width: 100%;
+	}
+
 	height: 45px;
 	margin-top: -.3em;
 	width: 296px;
@@ -12,17 +34,22 @@
 }
 
 .un_definition_wrap {
-	@include maxmq(tab) {
+	@include maxmq(lg) {
 		margin-left: 50px;
 	}
+	@include maxmq(md) {
+		display: none;
+	}
+
 	margin-left: 100px;
 }
 
 .un_definition_block {
-	display: flex;
-	@include maxmq(tab) {
+	@include maxmq(lg) {
 		width: 350px;
 	}
+
+	display: flex;
 	width: 400px;
 
 	&:not(:first-of-type) {
@@ -37,18 +64,20 @@
 }
 
 .un_definition_term {
+	@include maxmq(lg) {
+		flex-basis: 100px;
+	}
+
 	color: $accent-color;
 	flex-basis: 113px;
 	flex-shrink: 0;
 	font-style: italic;
-	@include maxmq(tab) {
-		flex-basis: 100px;
-	}
 }
 
 .un_definition_description {
-	@include maxmq(tab) {
+	@include maxmq(lg) {
 		white-space: normal;
 	}
+
 	white-space: nowrap;
 }

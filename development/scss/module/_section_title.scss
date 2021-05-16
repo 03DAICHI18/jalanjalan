@@ -1,18 +1,20 @@
 .el_section_title {
-	color: $accent-color;
 	@include f_around(40 , 53 , false , 100);
-	@include maxmq(sp) {
+	@include maxmq(sm) {
 		font-size: rem(32);
 	}
+
+	color: $accent-color;
 	padding-left: 1em;
 }
 
 .el_section_subTitle {
-	color: $accent-color;
 	@include f_around(30 , 51 , false , 100);
-	@include maxmq(sp) {
+	@include maxmq(sm) {
 		font-size: rem(22.5);
 		margin-top: 60px;
 	}
+
+	color: $accent-color;
 	margin-top: 100px;
 }

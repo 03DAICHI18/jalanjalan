@@ -26,18 +26,18 @@ $space_endValue: 15 !default;
 }
 
 .hp_noneTab {
-	@include maxmq(tab) {
+	@include maxmq(lg) {
 		display: none;
 	}
 }
 // 改行
 .hp_brTab {
-	@include minmq(tab) {
+	@include minmq(lg) {
 		display: none;
 	}
 }
 .hp_brSp {
-	@include minmq(sp) {
+	@include minmq(sm) {
 		display: none;
 	}
 }

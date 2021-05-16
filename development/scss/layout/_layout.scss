@@ -1,9 +1,13 @@
 /* layout */
 /************************************************/
 .ly_top_container {
-	@include maxmq(tab) {
+	@include maxmq(lg) {
 		margin: 0 20px;
 	}
+	@include maxmq(md) {
+		position: relative;
+	}
+
 	margin: 0 auto;
 	max-width: 1080px;
 }

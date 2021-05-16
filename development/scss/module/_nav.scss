@@ -1,0 +1,167 @@
+.bl_nav {
+	@include maxmq(md) {
+		background-color: rgba($color: #000, $alpha: .8);
+		flex-direction: column;
+		margin: 0 calc(50% - 50vw);
+		margin-top: 0;
+		padding: 70px 0;
+		transform: translateY(-500px);
+		transition: transform .2s;
+		width: 100vw;
+	}
+
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin-top: 80px;
+}
+
+.el_nav_item {
+	@include f_around(18 , 25 , false , 100);
+
+	padding-bottom: 25px;
+	position: relative;
+	text-align: center;
+	width: calc(100% / 6);
+	&:first-of-type {
+		padding-left: .65em;
+		text-align: left;
+		width: calc(100% / 8);
+	}
+	&:last-of-type {
+		padding-right: .65em;
+		text-align: right;
+		width: calc(100% / 7);
+	}
+	a {
+		color: $accent-color;
+		display: inline-block;
+		text-decoration: none;
+		transition: opacity .2s , text-decoration .5s;
+
+		&:hover {
+			opacity: .7;
+			text-decoration: underline;
+		}
+	}
+}
+
+@include maxmq(md) {
+	.el_nav_item {
+		padding-bottom: 0;
+		position: static;
+		width: 100%;
+		a {
+			color: #fff;
+			opacity: 0;
+			padding-bottom: 25px;
+			transition: opacity 2s;
+			width: 40%;
+		}
+		&:first-of-type {
+			padding-left: 0;
+			text-align: center;
+			width: 100%;
+		}
+		&:last-of-type {
+			padding-bottom: 0;
+			padding-right: 0;
+			text-align: center;
+			width: 100%;
+			a {
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+
+.el_nav_item:not(:last-of-type)::after {
+	@include maxmq(md) {
+		display: none;
+	}
+
+	background-color: $navLine-color;
+	content: "";
+	height: 1em;
+	position: absolute;
+	right: 0;
+	top: .35em;
+	transform: rotate(35deg);
+	width: 2px;
+}
+
+
+// ********************
+// ハンバーガーメニュー
+// ********************
+.el_btn {
+	@include minmq(mid) {
+		display: none;
+	}
+
+	align-items: center;
+	display: flex;
+	height: 48px;
+	justify-content: center;
+	position: absolute;
+	right: 0;
+	top: -70px;
+	width: 60px;
+	z-index: 101;
+}
+
+.el_btn_line {
+	background-color: $accent_color;
+	height: 4px;
+	width: 100%;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.el_btn_line::before , .el_btn_line::after {
+	display: block;
+	transition: transform .2s;
+}
+
+.el_btn_line::before {
+	background-color: inherit;
+	content: "";
+	height: 100%;
+	transform: translate(0 , -16px);
+	width: 100%;
+}
+
+.el_btn_line::after {
+	color: $accent_color;
+	content: "menu";
+	transform: translate(-3px , 3px);
+}
+
+// メニューオープン時
+.el_btn_line.is_open::before {
+	background-color: #fff;
+	transform: translate(0 , 0);
+}
+
+.el_btn_line.is_open::after {
+	color: #fff;
+	content: "close";
+	transform: translate(-3px , 3px);
+}
+
+.bl_nav.is_open {
+	@include maxmq(xs) {
+		transform: translateY(0);
+	}
+
+	transform: translateY(-40px);
+	z-index: 100;
+}
+
+.el_nav_item {
+	a.is_open {
+		opacity: 1;
+	}
+}
