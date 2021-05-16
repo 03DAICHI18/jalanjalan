@@ -106,6 +106,22 @@ img {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1080px) {
+  .el_nav_item {
+    width: calc(100% / 6);
+  }
+  .el_nav_item:first-of-type {
+    padding-left: 0;
+    text-align: center;
+    width: calc(100% / 6);
+  }
+  .el_nav_item:last-of-type {
+    padding-right: 0;
+    text-align: center;
+    width: calc(100% / 6);
+  }
+}
+
 @media screen and (max-width: 780px) {
   .el_nav_item {
     padding-bottom: 0;
