@@ -21,8 +21,8 @@
 .un_concept_stanceBlock {
 	display: flex;
 	@include maxmq(tab) {
-		display: block;
-		margin-top: 80px;
+		flex-direction: column;
+		margin-top: 40px;
 	}
 	margin-top: 75px;
 }
@@ -32,13 +32,13 @@
 	flex-shrink: 0;
 	height: 200px;
 	@include maxmq(tab) {
-		height: 500px;
-		margin: 0 auto;
-		width: 80%;
+		height: 300px;
+		margin: 20px auto 0;
+		order: 2;
+		width: 60%;
 	}
 	@include maxmq(sp) {
 		height: 250px;
-		margin: 0 auto;
 		width: 250px;
 	}
 	overflow: hidden;
@@ -53,7 +53,6 @@
 .un_concept_stanceText {
 	@include maxmq(tab) {
 		margin-left: 0;
-		margin-top: 20px;
 	}
 	margin-left: 62px;
 }
@@ -63,5 +62,8 @@
 }
 
 .un_concept_stanceSubHead {
+	@include maxmq(tab) {
+		margin-top: 0;
+	}
 	margin-top: .6em;
 }

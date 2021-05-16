@@ -272,8 +272,8 @@ img {
 
 @media screen and (max-width: 780px) {
   .un_concept_stanceBlock {
-    display: block;
-    margin-top: 80px;
+    flex-direction: column;
+    margin-top: 40px;
   }
 }
 
@@ -287,16 +287,16 @@ img {
 
 @media screen and (max-width: 780px) {
   .un_concept_stanceImg {
-    height: 500px;
-    margin: 0 auto;
-    width: 80%;
+    height: 300px;
+    margin: 20px auto 0;
+    order: 2;
+    width: 60%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .un_concept_stanceImg {
     height: 250px;
-    margin: 0 auto;
     width: 250px;
   }
 }
@@ -316,7 +316,6 @@ img {
 @media screen and (max-width: 780px) {
   .un_concept_stanceText {
     margin-left: 0;
-    margin-top: 20px;
   }
 }
 
@@ -326,6 +325,12 @@ img {
 
 .un_concept_stanceSubHead {
   margin-top: .6em;
+}
+
+@media screen and (max-width: 780px) {
+  .un_concept_stanceSubHead {
+    margin-top: 0;
+  }
 }
 
 /* js対応スタイル */
