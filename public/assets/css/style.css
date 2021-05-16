@@ -22,12 +22,39 @@ img {
   width: 100%;
 }
 
+h1, p, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
 /* layout */
 /************************************************/
+.ly_top_container {
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+@media screen and (max-width: 1080px) {
+  .ly_top_container {
+    margin: 0 20px;
+  }
+}
+
 .ly_contentsWrapper {
   margin: 0 auto;
   max-width: 997px;
   padding: 0 20px;
+}
+
+.bl_header {
+  display: flex;
+  margin: 100px 0 85px;
+}
+
+@media screen and (max-width: 1080px) {
+  .bl_header {
+    justify-content: space-between;
+  }
 }
 
 /* Module */
@@ -35,16 +62,8 @@ img {
 .bl_slide_container {
   border-radius: 14px;
   height: 600px;
-  margin: 0 auto;
-  max-width: 1080px;
   overflow: hidden;
   position: relative;
-}
-
-@media screen and (max-width: 1080px) {
-  .bl_slide_container {
-    margin: 0 20px;
-  }
 }
 
 @media screen and (max-width: 599px) {
@@ -246,9 +265,95 @@ img {
   margin-bottom: 150px !important;
 }
 
+@media screen and (max-width: 1080px) {
+  .hp_noneTab {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .hp_brTab {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 599px) {
   .hp_brSp {
     display: none;
+  }
+}
+
+.hp_texttransform {
+  text-transform: uppercase;
+}
+
+.un_top_logo {
+  height: 45px;
+  margin-top: -.3em;
+  width: 296px;
+}
+
+.un_top_logo img {
+  height: 100%;
+}
+
+.un_top_lead {
+  margin-top: 30px;
+}
+
+.un_definition_wrap {
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 1080px) {
+  .un_definition_wrap {
+    margin-left: 50px;
+  }
+}
+
+.un_definition_block {
+  display: flex;
+  width: 400px;
+}
+
+@media screen and (max-width: 1080px) {
+  .un_definition_block {
+    width: 350px;
+  }
+}
+
+.un_definition_block:not(:first-of-type) {
+  margin-top: 1em;
+}
+
+.un_definition_block:nth-of-type(3) {
+  margin-top: .5em;
+}
+
+.un_definition_block:last-of-type {
+  margin-top: .6em;
+}
+
+.un_definition_term {
+  color: #090909;
+  flex-basis: 113px;
+  flex-shrink: 0;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1080px) {
+  .un_definition_term {
+    flex-basis: 100px;
+  }
+}
+
+.un_definition_description {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1080px) {
+  .un_definition_description {
+    white-space: normal;
   }
 }
 

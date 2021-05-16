@@ -25,9 +25,23 @@ $space_endValue: 15 !default;
 	}
 }
 
-// SP以下改行
+.hp_noneTab {
+	@include maxmq(tab) {
+		display: none;
+	}
+}
+// 改行
+.hp_brTab {
+	@include minmq(tab) {
+		display: none;
+	}
+}
 .hp_brSp {
 	@include minmq(sp) {
 		display: none;
 	}
+}
+
+.hp_texttransform {
+	text-transform: uppercase;
 }

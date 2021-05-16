@@ -18,6 +18,7 @@
 @import "layout/layout";
 
 // module：共通パーツ
+@import "module/header";
 @import "module/slide";
 @import "module/section_title";
 @import "module/horizon";
@@ -26,6 +27,7 @@
 @import "helper/helper";
 
 // unipue：ある1ページでしか使用されないスタイル
+@import "unipue/top";
 @import "unipue/concept";
 
 // program：js等のプログラムに対応するスタイル  

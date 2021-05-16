@@ -1,0 +1,54 @@
+.un_top_logo {
+	height: 45px;
+	margin-top: -.3em;
+	width: 296px;
+	img {
+		height: 100%;
+	}
+}
+
+.un_top_lead {
+	margin-top: 30px;
+}
+
+.un_definition_wrap {
+	@include maxmq(tab) {
+		margin-left: 50px;
+	}
+	margin-left: 100px;
+}
+
+.un_definition_block {
+	display: flex;
+	@include maxmq(tab) {
+		width: 350px;
+	}
+	width: 400px;
+
+	&:not(:first-of-type) {
+		margin-top: 1em;
+	}
+	&:nth-of-type(3) {
+		margin-top: .5em;
+	}
+	&:last-of-type {
+		margin-top: .6em;
+	}
+}
+
+.un_definition_term {
+	color: $accent-color;
+	flex-basis: 113px;
+	flex-shrink: 0;
+	font-style: italic;
+	@include maxmq(tab) {
+		flex-basis: 100px;
+	}
+}
+
+.un_definition_description {
+	@include maxmq(tab) {
+		white-space: normal;
+	}
+	white-space: nowrap;
+}
