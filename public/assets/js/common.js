@@ -30,4 +30,12 @@ $(function () {
     }, 3000);
   }
   startTimer();
+
+
+  // iosハック
+  var userAgent = navigator.userAgent; // ユーザーエージェント判定
+  // aタグを踏んだ時の端末判定とhover装飾
+  if (userAgent.indexOf("iPhone") >= 0) {
+    $('.el_btn').css('width', '55px');
+  }
 });
