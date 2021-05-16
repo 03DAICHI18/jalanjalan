@@ -24,3 +24,10 @@ $space_endValue: 15 !default;
 		}
 	}
 }
+
+// SP以下改行
+.hp_brSp {
+	@include minmq(sp) {
+		display: none;
+	}
+}

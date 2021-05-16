@@ -9,12 +9,12 @@
 	position: relative;
 }
 
-@include maxmq(pc) {
+@include maxmq(tab) {
 	.bl_slide_container {
 		margin: 0 20px;
 	}
 }
-@include maxmq(tab) {
+@include maxmq(sp) {
 	.bl_slide_container {
 		height: 400px;
 	}
@@ -31,7 +31,7 @@
 .el_slide_img {
 	font-family: "object-fit: cover;";  /*IE対策*/
 	height: 100%;
-	@include maxmq(tab) {
+	@include maxmq(sp) {
 		object-position: 15% 10%;
 	}
 	object-fit: cover;

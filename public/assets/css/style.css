@@ -10,6 +10,12 @@ body {
   overflow-x: hidden;
 }
 
+@media screen and (max-width: 599px) {
+  body {
+    font-size: 0.875rem;
+  }
+}
+
 img {
   height: auto;
   vertical-align: bottom;
@@ -41,7 +47,7 @@ img {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 599px) {
   .bl_slide_container {
     height: 400px;
   }
@@ -63,7 +69,7 @@ img {
      object-fit: cover;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 599px) {
   .el_slide_img {
     -o-object-position: 15% 10%;
        object-position: 15% 10%;
@@ -78,7 +84,7 @@ img {
   padding-left: 1em;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 599px) {
   .el_section_title {
     font-size: 2rem;
   }
@@ -92,9 +98,9 @@ img {
   margin-top: 100px;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 599px) {
   .el_section_subTitle {
-    font-size: 1.5rem;
+    font-size: 1.40625rem;
     margin-top: 60px;
   }
 }
@@ -240,13 +246,19 @@ img {
   margin-bottom: 150px !important;
 }
 
+@media screen and (min-width: 599px) {
+  .hp_brSp {
+    display: none;
+  }
+}
+
 /* ページ独自のスタイル */
 /************************************************/
 .un_concept_lead {
   text-align: center;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 599px) {
   .un_concept_lead {
     text-align: left;
   }
@@ -257,6 +269,12 @@ img {
   line-height: 1.7;
   letter-spacing: 0.1em;
   margin-top: 1.4em;
+}
+
+@media screen and (max-width: 599px) {
+  .un_concept_text {
+    font-size: 1rem;
+  }
 }
 
 .un_concept_stance {
@@ -270,7 +288,7 @@ img {
   margin-top: 75px;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 599px) {
   .un_concept_stanceBlock {
     flex-direction: column;
     margin-top: 40px;
@@ -285,7 +303,7 @@ img {
   width: 200px;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 599px) {
   .un_concept_stanceImg {
     height: 300px;
     margin: 20px auto 0;
@@ -294,7 +312,7 @@ img {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 599px) {
   .un_concept_stanceImg {
     height: 250px;
     width: 250px;
@@ -313,7 +331,7 @@ img {
   margin-left: 62px;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 599px) {
   .un_concept_stanceText {
     margin-left: 0;
   }
@@ -327,7 +345,7 @@ img {
   margin-top: .6em;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 599px) {
   .un_concept_stanceSubHead {
     margin-top: 0;
   }

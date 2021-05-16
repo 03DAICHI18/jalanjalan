@@ -1,7 +1,7 @@
 /* ページ独自のスタイル */
 /************************************************/
 .un_concept_lead {
-	@include maxmq(tab) {
+	@include maxmq(sp) {
 		text-align: left;
 	}
 	text-align: center;
@@ -9,6 +9,9 @@
 
 .un_concept_text {
 	@include f_around(20 , 34 , false , 100);
+	@include maxmq(sp) {
+		font-size: rem(16);
+	}
 	margin-top: 1.4em;
 }
 
@@ -20,7 +23,7 @@
 
 .un_concept_stanceBlock {
 	display: flex;
-	@include maxmq(tab) {
+	@include maxmq(sp) {
 		flex-direction: column;
 		margin-top: 40px;
 	}
@@ -31,7 +34,7 @@
 	border-radius: 14px;
 	flex-shrink: 0;
 	height: 200px;
-	@include maxmq(tab) {
+	@include maxmq(sp) {
 		height: 300px;
 		margin: 20px auto 0;
 		order: 2;
@@ -51,7 +54,7 @@
 }
 
 .un_concept_stanceText {
-	@include maxmq(tab) {
+	@include maxmq(sp) {
 		margin-left: 0;
 	}
 	margin-left: 62px;
@@ -62,7 +65,7 @@
 }
 
 .un_concept_stanceSubHead {
-	@include maxmq(tab) {
+	@include maxmq(sp) {
 		margin-top: 0;
 	}
 	margin-top: .6em;

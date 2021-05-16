@@ -5,6 +5,9 @@ body {
 	color: $base-color;
 	font-family: $fontFamily;
 	@include f_around(16 , 27 , false , 100);
+	@include maxmq(sp) {
+		font-size: rem(14);
+	}
 	overflow-x: hidden;
 }
 
