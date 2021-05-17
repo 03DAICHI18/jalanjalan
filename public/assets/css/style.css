@@ -61,16 +61,16 @@ img {
 
 @media screen and (max-width: 780px) {
   .bl_nav {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #fff;
     flex-direction: column;
     margin: 0 calc(50% - 50vw);
     margin-top: 0;
     padding: 70px 0;
     -webkit-transform: translateY(-500px);
             transform: translateY(-500px);
-    transition: -webkit-transform .2s;
-    transition: transform .2s;
-    transition: transform .2s, -webkit-transform .2s;
+    transition: -webkit-transform .4s;
+    transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s;
     width: 100vw;
   }
 }
@@ -134,10 +134,10 @@ img {
     width: 100%;
   }
   .el_nav_item a {
-    color: #fff;
     opacity: 0;
     padding-bottom: 25px;
-    transition: opacity 2s;
+    transition: opacity 1.5s;
+    transition-delay: .2s;
     width: 40%;
   }
   .el_nav_item:first-of-type {
@@ -227,12 +227,10 @@ img {
 
 @media screen and (max-width: 780px) {
   .el_btn_line.is_open::before {
-    background-color: #fff;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
   .el_btn_line.is_open::after {
-    color: #fff;
     content: "close";
     -webkit-transform: translate(-0.3em, 3px);
             transform: translate(-0.3em, 3px);

@@ -1,12 +1,12 @@
 .bl_nav {
 	@include maxmq(md) {
-		background-color: rgba($color: #000, $alpha: .8);
+		background-color: #fff;
 		flex-direction: column;
 		margin: 0 calc(50% - 50vw);
 		margin-top: 0;
 		padding: 70px 0;
 		transform: translateY(-500px);
-		transition: transform .2s;
+		transition: transform .4s;
 		width: 100vw;
 	}
 
@@ -68,10 +68,10 @@
 		position: static;
 		width: 100%;
 		a {
-			color: #fff;
 			opacity: 0;
 			padding-bottom: 25px;
-			transition: opacity 2s;
+			transition: opacity 1.5s;
+			transition-delay: .2s;
 			width: 40%;
 		}
 		&:first-of-type {
@@ -158,12 +158,10 @@
 // メニューオープン時
 @include maxmq(md) {
 	.el_btn_line.is_open::before {
-		background-color: #fff;
 		transform: translate(0 , 0);
 	}
 
 	.el_btn_line.is_open::after {
-		color: #fff;
 		content: "close";
 		transform: translate(-.3em , 3px);
 	}
