@@ -47,6 +47,11 @@ img {
   padding: 0 20px;
 }
 
+.ly_footer {
+  padding: 80px 0 20px;
+  text-align: center;
+}
+
 .bl_nav {
   display: flex;
   justify-content: space-between;
@@ -264,7 +269,7 @@ img {
 
 @media screen and (max-width: 599px) {
   .bl_slide_container {
-    height: 400px;
+    height: 300px;
   }
 }
 
@@ -329,6 +334,11 @@ img {
 
 .el_horizon_concept {
   margin-top: 10px;
+}
+
+.el_footer_copy {
+  font-size: 0.875rem;
+  line-height: 1.21429;
 }
 
 /* helperスタイル */
@@ -497,7 +507,7 @@ img {
 @media screen and (max-width: 780px) {
   .un_top_header {
     display: block;
-    margin-bottom: -250px;
+    margin-bottom: -300px;
     text-align: center;
   }
 }
@@ -523,6 +533,7 @@ img {
 
 .un_top_logo img {
   height: 100%;
+  vertical-align: inherit;
 }
 
 .un_top_lead {
